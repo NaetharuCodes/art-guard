@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import AppShell from "./AppShell.astro";
 ---
 
 <!doctype html>
@@ -12,7 +13,9 @@ import "../styles/global.css";
     <title>Astro Basics</title>
   </head>
   <body>
-    <slot />
+    <AppShell>
+      <slot />
+    </AppShell>
   </body>
 </html>
 

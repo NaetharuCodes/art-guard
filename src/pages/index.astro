@@ -3,33 +3,4 @@ import IconSheild from "../components/IconSheild.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-  <div class="flex flex-col font-[var(--font-sans)] text-[var(--primary)]">
-    <div class="max-w-[1400px] mx-auto w-full">
-      <header class="p-2 flex flex-row gap-3 items-center justify-between">
-        <!-- BRAND -->
-        <div class="flex gap-3 items-ce">
-          <IconSheild />
-          <h1 class="font-bold">Art Guard</h1>
-        </div>
-
-        <!-- Links -->
-        <div class="text-[var(--foreground)] flex gap-8 font-bold">
-          <a href="/features">Features</a>
-          <a href="/howitworks">How It Works</a>
-          <a href="/roadmap">Roadmap</a>
-          <a href="/faq">FAQ</a>
-        </div>
-
-        <!-- Buttons -->
-        <div>
-          <button
-            class="bg-[var(--primary)] rounded-[var(--radius)] text-background p-1"
-            >Try It Now</button
-          >
-        </div>
-      </header>
-      <footer></footer>
-    </div>
-  </div>
-</Layout>
+<Layout />
