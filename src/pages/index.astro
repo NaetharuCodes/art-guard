@@ -5,61 +5,446 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <HeroSection />
-  <section>
-    <h2>Step 1: Sign up and Upload Your Work</h2>
-    <p>
-      Art Guard allows you to create professional portfolios that you can use to
-      demonstrate your skills to prospective clients.
-    </p>
-    <p>
-      Once you sign up you can upload a curated selection of your work to best
-      show off your abilies. We help and guide you through this process making
-      it easier than ever to create a clear porfolio that clearly demonstrates
-      who you are and what you can do.
-    </p>
+  <!-- Replace your first section with this -->
+  <section class="py-16 px-4 bg-[var(--card)]">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Left side - Content -->
+        <div class="space-y-6">
+          <!-- Step badge -->
+          <div
+            class="inline-flex items-center gap-2 bg-[var(--primary)] text-[var(--primary-foreground)] px-3 py-1 rounded-full text-sm font-medium"
+          >
+            <span>01</span>
+            <span>Step 1</span>
+          </div>
+
+          <!-- Headline -->
+          <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)]">
+            Sign up and Upload Your Work
+          </h2>
+
+          <!-- Description -->
+          <div class="space-y-4 text-[var(--muted-foreground)]">
+            <p>
+              Art Guard allows you to create professional portfolios that you
+              can use to demonstrate your skills to prospective clients.
+            </p>
+            <p>
+              Once you sign up you can upload a curated selection of your work
+              to best show off your abilities. We help and guide you through
+              this process making it easier than ever to create a clear
+              portfolio that clearly demonstrates who you are and what you can
+              do.
+            </p>
+          </div>
+
+          <!-- CTA Button -->
+          <button
+            class="bg-[var(--primary)] text-[var(--primary-foreground)] px-6 py-3 rounded-[var(--radius)] font-semibold hover:opacity-90 transition-opacity"
+          >
+            Start Your Portfolio
+          </button>
+        </div>
+
+        <!-- Right side - Demo placeholder -->
+        <div
+          class="bg-[var(--background)] border-2 border-[var(--border)] rounded-[var(--radius-lg)] p-8 shadow-[var(--shadow-lg)]"
+        >
+          <div class="space-y-4">
+            <!-- Header -->
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-8 h-8 bg-[var(--primary)] rounded-full"></div>
+              <div>
+                <div class="w-24 h-4 bg-[var(--muted)] rounded"></div>
+                <div class="w-16 h-3 bg-[var(--muted)] rounded mt-1"></div>
+              </div>
+            </div>
+
+            <!-- Portfolio grid mockup -->
+            <div class="grid grid-cols-2 gap-3">
+              <div
+                class="aspect-square bg-[var(--muted)] rounded-[var(--radius)] flex items-center justify-center"
+              >
+                <span class="text-[var(--muted-foreground)] text-sm"
+                  >Artwork 1</span
+                >
+              </div>
+              <div
+                class="aspect-square bg-[var(--muted)] rounded-[var(--radius)] flex items-center justify-center"
+              >
+                <span class="text-[var(--muted-foreground)] text-sm"
+                  >Artwork 2</span
+                >
+              </div>
+              <div
+                class="aspect-square bg-[var(--muted)] rounded-[var(--radius)] flex items-center justify-center"
+              >
+                <span class="text-[var(--muted-foreground)] text-sm"
+                  >Artwork 3</span
+                >
+              </div>
+              <div
+                class="aspect-square bg-[var(--muted)] rounded-[var(--radius)] flex items-center justify-center"
+              >
+                <span class="text-[var(--muted-foreground)] text-sm"
+                  >Artwork 4</span
+                >
+              </div>
+            </div>
+
+            <!-- Portfolio title placeholder -->
+            <div class="text-center mt-6">
+              <div class="w-32 h-4 bg-[var(--muted)] rounded mx-auto"></div>
+              <div class="w-24 h-3 bg-[var(--muted)] rounded mx-auto mt-2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section>
-    <h2>Step 2: Build a Comission Flow</h2>
-    <p>
-      Using Art Guard's tools you create a comission flow that manages every
-      step of your transactions. Gone are the difficult client interactions.
-      Now, you have a clear and simple process that is transparent to all
-      involved.
-    </p>
-    <p>
-      Set a robust process that shows clients just what they need to provide.
-      Examples of comission workflow, types of references needed, and clear
-      examples of what a client will receive at each step of the process.
-    </p>
-    <ul>
-      <li>Pre-Commission Checklist</li>
-      <li>Examples for each stage</li>
-      <li>Professional contracts with specifics on each step of the process</li>
-      <li>Timeline management</li>
-      <li>Payment services</li>
-    </ul>
+  <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Left side - Content -->
+        <div class="space-y-6">
+          <!-- Step badge -->
+          <div
+            class="inline-flex items-center gap-2 bg-[var(--primary)] text-[var(--primary-foreground)] px-3 py-1 rounded-full text-sm font-medium"
+          >
+            <span>02</span>
+            <span>Step 2</span>
+          </div>
+
+          <!-- Headline -->
+          <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)]">
+            Build a Commission Flow
+          </h2>
+
+          <!-- Description -->
+          <div class="space-y-4 text-[var(--muted-foreground)]">
+            <p>
+              Using Art Guard's tools you create a commission flow that manages
+              every step of your transactions. Gone are the difficult client
+              interactions. Now, you have a clear and simple process that is
+              transparent to all involved.
+            </p>
+            <p>
+              Set a robust process that shows clients just what they need to
+              provide. Examples of commission workflow, types of references
+              needed, and clear examples of what a client will receive at each
+              step of the process.
+            </p>
+          </div>
+
+          <!-- Feature list -->
+          <div class="space-y-2">
+            <div class="flex items-center gap-2 text-[var(--foreground)]">
+              <div class="w-2 h-2 bg-[var(--primary)] rounded-full"></div>
+              <span class="text-sm">Pre-Commission Checklist</span>
+            </div>
+            <div class="flex items-center gap-2 text-[var(--foreground)]">
+              <div class="w-2 h-2 bg-[var(--primary)] rounded-full"></div>
+              <span class="text-sm">Examples for each stage</span>
+            </div>
+            <div class="flex items-center gap-2 text-[var(--foreground)]">
+              <div class="w-2 h-2 bg-[var(--primary)] rounded-full"></div>
+              <span class="text-sm">Professional contracts with specifics</span>
+            </div>
+            <div class="flex items-center gap-2 text-[var(--foreground)]">
+              <div class="w-2 h-2 bg-[var(--primary)] rounded-full"></div>
+              <span class="text-sm">Timeline management</span>
+            </div>
+            <div class="flex items-center gap-2 text-[var(--foreground)]">
+              <div class="w-2 h-2 bg-[var(--primary)] rounded-full"></div>
+              <span class="text-sm">Payment services</span>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <button
+            class="bg-[var(--primary)] text-[var(--primary-foreground)] px-6 py-3 rounded-[var(--radius)] font-semibold hover:opacity-90 transition-opacity"
+          >
+            Setup Your Flow
+          </button>
+        </div>
+
+        <!-- Right side - Timeline demo -->
+        <div
+          class="bg-[var(--background)] border-2 border-[var(--border)] rounded-[var(--radius-lg)] p-8 shadow-[var(--shadow-lg)]"
+        >
+          <div class="space-y-6">
+            <!-- Timeline header -->
+            <div class="text-center mb-8">
+              <h3 class="font-semibold text-[var(--foreground)] mb-2">
+                Commission Timeline
+              </h3>
+              <div class="w-16 h-1 bg-[var(--primary)] rounded mx-auto"></div>
+            </div>
+
+            <!-- Timeline steps -->
+            <div class="relative space-y-6">
+              <!-- Vertical line -->
+              <div
+                class="absolute left-4 top-4 bottom-4 w-0.5 bg-[var(--border)]"
+              >
+              </div>
+
+              <!-- Step 1 - Completed -->
+              <div class="relative flex items-center gap-4">
+                <div
+                  class="w-8 h-8 bg-[var(--primary)] rounded-full flex items-center justify-center text-[var(--primary-foreground)] text-sm font-bold z-10"
+                >
+                  ✓
+                </div>
+                <div>
+                  <div class="font-medium text-[var(--foreground)]">
+                    Request
+                  </div>
+                  <div class="text-sm text-[var(--muted-foreground)]">
+                    Client submits initial request
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 2 - Completed -->
+              <div class="relative flex items-center gap-4">
+                <div
+                  class="w-8 h-8 bg-[var(--primary)] rounded-full flex items-center justify-center text-[var(--primary-foreground)] text-sm font-bold z-10"
+                >
+                  ✓
+                </div>
+                <div>
+                  <div class="font-medium text-[var(--foreground)]">
+                    Provide Info
+                  </div>
+                  <div class="text-sm text-[var(--muted-foreground)]">
+                    References and details gathered
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3 - Current -->
+              <div class="relative flex items-center gap-4">
+                <div
+                  class="w-8 h-8 bg-[var(--accent)] border-2 border-[var(--primary)] rounded-full flex items-center justify-center text-[var(--foreground)] text-sm font-bold z-10"
+                >
+                  3
+                </div>
+                <div>
+                  <div class="font-medium text-[var(--foreground)]">
+                    Create Thumbnails
+                  </div>
+                  <div class="text-sm text-[var(--primary)]">
+                    Currently in progress
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 4 - Upcoming -->
+              <div class="relative flex items-center gap-4">
+                <div
+                  class="w-8 h-8 bg-[var(--muted)] rounded-full flex items-center justify-center text-[var(--muted-foreground)] text-sm font-bold z-10"
+                >
+                  4
+                </div>
+                <div>
+                  <div class="font-medium text-[var(--muted-foreground)]">
+                    Revise Thumbnails
+                  </div>
+                  <div class="text-sm text-[var(--muted-foreground)]">
+                    Pending approval
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 5 - Upcoming -->
+              <div class="relative flex items-center gap-4">
+                <div
+                  class="w-8 h-8 bg-[var(--muted)] rounded-full flex items-center justify-center text-[var(--muted-foreground)] text-sm font-bold z-10"
+                >
+                  5
+                </div>
+                <div>
+                  <div class="font-medium text-[var(--muted-foreground)]">
+                    Create Draft
+                  </div>
+                  <div class="text-sm text-[var(--muted-foreground)]">
+                    Final artwork creation
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 6 - Upcoming -->
+              <div class="relative flex items-center gap-4">
+                <div
+                  class="w-8 h-8 bg-[var(--muted)] rounded-full flex items-center justify-center text-[var(--muted-foreground)] text-sm font-bold z-10"
+                >
+                  6
+                </div>
+                <div>
+                  <div class="font-medium text-[var(--muted-foreground)]">
+                    Complete
+                  </div>
+                  <div class="text-sm text-[var(--muted-foreground)]">
+                    Final delivery
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section>
-    <h2>Step 3: Protect your rights</h2>
-    <p>
-      Register your original work on Art Guard Protect, in our central copyright
-      database.
-    </p>
-    <p>
-      We pro-actively defend your copyright, including carrying out ongoing
-      takedowns from AI datasets.
-    </p>
-    <p>
-      Protect against AI scraping with our multi-modal defence solutions. We use
-      a range of cutting edge techniques to protect your work. From legal
-      actions to have your work removed from AI companies data sets, to
-      technical soltuions to stop it from being scraped in the first place.
-    </p>
-    <p>
-      Poison Fruits: In addition to protecting your specific art work, we also
-      operate poison solutions, providing AI scrapers with bad data, that is
-      hard for the AI company to detect on a case by case basis, but that will
-      cause detrimental results to any model trained on it.
-    </p>
+  <section class="py-16 px-4 bg-[var(--card)]">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Left side - Content -->
+        <div class="space-y-6">
+          <!-- Step badge -->
+          <div
+            class="inline-flex items-center gap-2 bg-[var(--primary)] text-[var(--primary-foreground)] px-3 py-1 rounded-full text-sm font-medium"
+          >
+            <span>03</span>
+            <span>Step 3</span>
+          </div>
+
+          <!-- Headline -->
+          <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)]">
+            Protect Your Rights
+          </h2>
+
+          <!-- Description -->
+          <div class="space-y-4 text-[var(--muted-foreground)]">
+            <p>
+              Register your original work on Art Guard Protect, in our central
+              copyright database.
+            </p>
+            <p>
+              We pro-actively defend your copyright, including carrying out
+              ongoing takedowns from AI datasets.
+            </p>
+            <p>
+              Protect against AI scraping with our multi-modal defence
+              solutions. We use a range of cutting edge techniques to protect
+              your work from legal actions to technical solutions.
+            </p>
+            <p>
+              It also goes without saying that <span
+                class="text-[var(--primary)] font-bold"
+                >WE NEVER SELL ANY OF YOUR DATA</span
+              >. This includes both your account data and your uploaded art.
+            </p>
+          </div>
+
+          <!-- CTA Button -->
+          <button
+            class="bg-[var(--primary)] text-[var(--primary-foreground)] px-6 py-3 rounded-[var(--radius)] font-semibold hover:opacity-90 transition-opacity"
+          >
+            Start Protection
+          </button>
+        </div>
+
+        <!-- Right side - Feature cards -->
+        <div class="space-y-4">
+          <!-- Header -->
+          <div class="text-center mb-6">
+            <h3 class="font-semibold text-[var(--foreground)] mb-2">
+              Protection Features
+            </h3>
+            <div class="w-16 h-1 bg-[var(--primary)] rounded mx-auto"></div>
+          </div>
+
+          <!-- Cards grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Copyright Registry -->
+            <div
+              class="bg-[var(--background)] border border-[var(--border)] rounded-[var(--radius)] p-4 shadow-[var(--shadow-sm)]"
+            >
+              <div class="flex items-start gap-3">
+                <div
+                  class="w-8 h-8 bg-[var(--primary)] rounded-[var(--radius)] flex items-center justify-center text-[var(--primary-foreground)] text-sm font-bold mt-1"
+                >
+                  ©
+                </div>
+                <div>
+                  <h4 class="font-semibold text-[var(--foreground)] mb-1">
+                    Copyright Registry
+                  </h4>
+                  <p class="text-sm text-[var(--muted-foreground)]">
+                    Central database proving ownership and creation dates
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- AI Takedown -->
+            <div
+              class="bg-[var(--background)] border border-[var(--border)] rounded-[var(--radius)] p-4 shadow-[var(--shadow-sm)]"
+            >
+              <div class="flex items-start gap-3">
+                <div
+                  class="w-8 h-8 bg-[var(--destructive)] rounded-[var(--radius)] flex items-center justify-center text-[var(--destructive-foreground)] text-sm font-bold mt-1"
+                >
+                  ⚠
+                </div>
+                <div>
+                  <h4 class="font-semibold text-[var(--foreground)] mb-1">
+                    AI Takedowns
+                  </h4>
+                  <p class="text-sm text-[var(--muted-foreground)]">
+                    Active removal requests from AI company datasets
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Anti-Scraping -->
+            <div
+              class="bg-[var(--background)] border border-[var(--border)] rounded-[var(--radius)] p-4 shadow-[var(--shadow-sm)]"
+            >
+              <div class="flex items-start gap-3">
+                <div
+                  class="w-8 h-8 bg-[var(--secondary)] rounded-[var(--radius)] flex items-center justify-center text-[var(--secondary-foreground)] text-sm font-bold mt-1"
+                >
+                  🛡
+                </div>
+                <div>
+                  <h4 class="font-semibold text-[var(--foreground)] mb-1">
+                    Anti-Scraping
+                  </h4>
+                  <p class="text-sm text-[var(--muted-foreground)]">
+                    Technical defenses to prevent automated scraping
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Poison Data -->
+            <div
+              class="bg-[var(--background)] border border-[var(--border)] rounded-[var(--radius)] p-4 shadow-[var(--shadow-sm)]"
+            >
+              <div class="flex items-start gap-3">
+                <div
+                  class="w-8 h-8 bg-[var(--accent)] rounded-[var(--radius)] flex items-center justify-center text-[var(--accent-foreground)] text-sm font-bold mt-1"
+                >
+                  ☠
+                </div>
+                <div>
+                  <h4 class="font-semibold text-[var(--foreground)] mb-1">
+                    Poison Data
+                  </h4>
+                  <p class="text-sm text-[var(--muted-foreground)]">
+                    Inject bad data to damage AI training models
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </Layout>
