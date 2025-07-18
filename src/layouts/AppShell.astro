@@ -1,9 +1,13 @@
 ---
-import IconSheild from "../components/IconSheild.astro";
+import IconDiscord from "../components/Icons/IconDiscord.astro";
+import IconSheild from "../components/Icons/IconSheild.astro";
 ---
 
-<div class="flex flex-col font-[var(--font-sans)] text-[var(--primary)]">
-  <div class="max-w-[1400px] mx-auto w-full">
+<div
+  class="flex flex-col font-[var(--font-sans)] text-[var(--primary)] min-h-screen"
+>
+  <div class="max-w-[1400px] mx-auto w-full flex flex-col min-h-screen">
+    <!-- Header -->
     <header class="p-2 flex flex-row gap-3 items-center justify-between">
       <!-- BRAND -->
       <div class="flex gap-3 items-ce">
@@ -27,6 +31,62 @@ import IconSheild from "../components/IconSheild.astro";
         >
       </div>
     </header>
-    <footer></footer>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-2">
+      <slot />
+    </main>
+
+    <!-- In AppShell.astro, add this inside the footer tag -->
+    <footer class="p-2 border-t border-[var(--border)] mt-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <!-- Left side - Links -->
+        <div class="flex flex-wrap gap-6 text-sm">
+          <a
+            href="/about"
+            class="text-[var(--foreground)] hover:text-[var(--primary)]"
+            >About</a
+          >
+          <a
+            href="/terms"
+            class="text-[var(--foreground)] hover:text-[var(--primary)]"
+            >Terms</a
+          >
+          <a
+            href="/privacy"
+            class="text-[var(--foreground)] hover:text-[var(--primary)]"
+            >Privacy</a
+          >
+          <a
+            href="/contact"
+            class="text-[var(--foreground)] hover:text-[var(--primary)]"
+            >Contact</a
+          >
+          <a
+            href="/help"
+            class="text-[var(--foreground)] hover:text-[var(--primary)]">Help</a
+          >
+        </div>
+
+        <!-- Center - Mission -->
+        <div class="text-sm text-[var(--muted-foreground)] text-center">
+          Protecting artists and their creative work
+        </div>
+
+        <!-- Right side - Social + Copyright -->
+        <div class="flex items-center gap-4">
+          <div class="flex gap-3">
+            <a
+              href="#"
+              class="text-[var(--foreground)] hover:text-[var(--primary)]"
+              ><IconDiscord /></a
+            >
+          </div>
+          <div class="text-sm text-[var(--muted-foreground)]">
+            © 2024 Art Guard
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </div>

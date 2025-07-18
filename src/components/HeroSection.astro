@@ -1,0 +1,64 @@
+---
+import IconSheild from "./Icons/IconSheild.astro";
+import IconTick from "./Icons/IconTick.astro";
+---
+
+<!-- Add this to your index.astro or as a Hero component -->
+<section class="py-16 px-4 bg-gradient-to-">
+  <div class="max-w-4xl mx-auto text-center">
+    <!-- Badge -->
+    <div
+      class="inline-flex items-center gap-2 bg-[var(--primary)] text-[var(--primary-foreground)] px-4 py-2 rounded-full text-sm font-medium mb-8"
+    >
+      <IconSheild />
+      <span>Get Started Now</span>
+    </div>
+
+    <!-- Main Heading -->
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+      One Place for all your <span class="text-[var(--primary)]"
+        >Creative Work</span
+      >
+    </h1>
+
+    <!-- Subheading -->
+    <p
+      class="text-xl md:text-2xl text-[var(--muted-foreground)] mb-8 max-w-2xl mx-auto"
+    >
+      Portfolio hosting, commission management, and tools to protect your
+      copyright and defend against AI.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+      <button
+        class="bg-[var(--primary)] text-[var(--primary-foreground)] px-8 py-3 rounded-[var(--radius)] font-semibold hover:opacity-90 transition-opacity"
+      >
+        Start Protecting Your Art
+      </button>
+      <button
+        class="border-2 border-[var(--border)] text-[var(--foreground)] px-8 py-3 rounded-[var(--radius)] font-semibold hover:bg-[var(--secondary)] transition-colors"
+      >
+        View Examples
+      </button>
+    </div>
+
+    <!-- Feature List -->
+    <div
+      class="flex flex-col sm:flex-row gap-6 justify-center text-sm text-[var(--muted-foreground)]"
+    >
+      <div class="flex items-center gap-2">
+        <IconTick />
+        <span>Portfolio Hosting</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <IconTick />
+        <span>Commission Management</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <IconTick />
+        <span>AI Protection Tools</span>
+      </div>
+    </div>
+  </div>
+</section>
